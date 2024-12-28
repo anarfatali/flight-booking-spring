@@ -1,6 +1,6 @@
 package az.edu.turing.flightbookingspring.repository;
 
-import az.edu.turing.flightbookingspring.entities.FlightEntity;
+import az.edu.turing.flightbookingspring.domain.entities.FlightEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -15,7 +15,7 @@ public class FlightRepository {
     }
 
     public int save(FlightEntity flightEntity) {
-        return jdbcTemplate.update("INSERT INTO flightEntities (destination,from,departureTime,availableSeats) VALUES (?, ?, ?, ?)",
+        return jdbcTemplate.update("INSERT INTO flightEntities (destination,,departureTime,availableSeats) VALUES (?, ?, ?, ?)",
                 flightEntity.getDestination(), flightEntity.getFrom(), flightEntity.getDepartureTime(), flightEntity.getAvailableSeats());
     }
 }

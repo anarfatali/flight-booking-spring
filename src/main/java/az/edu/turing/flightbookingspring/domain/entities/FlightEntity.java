@@ -1,4 +1,4 @@
-package az.edu.turing.flightbookingspring.entities;
+package az.edu.turing.flightbookingspring.domain.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
