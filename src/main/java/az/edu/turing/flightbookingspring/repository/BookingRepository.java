@@ -1,23 +1,11 @@
 package az.edu.turing.flightbookingspring.repository;
 
 
-import az.edu.turing.flightbookingspring.domain.entities.BookingEntity;
-import org.springframework.jdbc.core.JdbcTemplate;
+import az.edu.turing.flightbookingspring.entities.BookingEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class BookingRepository {
-
-    private final JdbcTemplate jdbcTemplate;
-
-    public BookingRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
-    public int save(BookingEntity bookingEntity) {
-        return jdbcTemplate.update("INSERT INTO bookingEntities (bookerName, bookerSurname) VALUES (?, ?)",
-                bookingEntity.getBookerName(), bookingEntity.getBookerSurname());
-    }
-
+public interface BookingRepository extends JpaRepository<BookingEntity, Long> {
 
 }

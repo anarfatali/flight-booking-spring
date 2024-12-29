@@ -1,15 +1,11 @@
-package az.edu.turing.flightbookingspring.domain.entities;
+package az.edu.turing.flightbookingspring.dto.request;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class FlightEntity {
+public class FlightRequest {
 
     private Long flightId;
     private String destination;

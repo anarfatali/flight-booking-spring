@@ -1,21 +1,10 @@
 package az.edu.turing.flightbookingspring.repository;
 
-import az.edu.turing.flightbookingspring.domain.entities.FlightEntity;
-import org.springframework.jdbc.core.JdbcTemplate;
+import az.edu.turing.flightbookingspring.entities.FlightEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class FlightRepository {
+public interface FlightRepository extends JpaRepository<FlightEntity, Long> {
 
-    private final JdbcTemplate jdbcTemplate;
-
-
-    public FlightRepository(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
-    public int save(FlightEntity flightEntity) {
-        return jdbcTemplate.update("INSERT INTO flightEntities (destination,,departureTime,availableSeats) VALUES (?, ?, ?, ?)",
-                flightEntity.getDestination(), flightEntity.getFrom(), flightEntity.getDepartureTime(), flightEntity.getAvailableSeats());
-    }
 }
