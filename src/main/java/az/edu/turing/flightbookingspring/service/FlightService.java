@@ -1,8 +1,8 @@
 package az.edu.turing.flightbookingspring.service;
 
-import az.edu.turing.flightbookingspring.entities.FlightEntity;
 import az.edu.turing.flightbookingspring.dto.request.FlightRequest;
 import az.edu.turing.flightbookingspring.dto.response.FlightResponse;
+import az.edu.turing.flightbookingspring.entities.FlightEntity;
 
 import java.util.List;
 

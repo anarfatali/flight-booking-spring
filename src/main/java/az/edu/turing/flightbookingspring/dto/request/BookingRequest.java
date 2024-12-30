@@ -5,7 +5,8 @@ import lombok.Data;
 @Data
 public class BookingRequest {
 
-    private Long BookingId;
+    private Long bookingId;
     private String bookerName;
     private String bookerSurname;
+
 }

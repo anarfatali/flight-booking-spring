@@ -7,4 +7,5 @@ public class BookingResponse {
 
     private String bookerName;
     private String bookerSurname;
+
 }

@@ -49,5 +49,4 @@ public class FlightController {
         return flightService.getResponse(id, flightRequest);
     }
 
-
 }

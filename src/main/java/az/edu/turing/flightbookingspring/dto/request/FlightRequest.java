@@ -12,4 +12,5 @@ public class FlightRequest {
     private String from;
     private LocalDateTime departureTime;
     private Integer availableSeats;
+
 }

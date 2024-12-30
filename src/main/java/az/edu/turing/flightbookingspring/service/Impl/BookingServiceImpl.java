@@ -1,8 +1,8 @@
 package az.edu.turing.flightbookingspring.service.Impl;
 
-import az.edu.turing.flightbookingspring.entities.BookingEntity;
 import az.edu.turing.flightbookingspring.dto.request.BookingRequest;
 import az.edu.turing.flightbookingspring.dto.response.BookingResponse;
+import az.edu.turing.flightbookingspring.entities.BookingEntity;
 import az.edu.turing.flightbookingspring.exception.BookingNotFoundException;
 import az.edu.turing.flightbookingspring.repository.BookingRepository;
 import az.edu.turing.flightbookingspring.service.BookingService;
